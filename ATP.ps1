@@ -15,7 +15,7 @@ try {
 
 # Executa o script baixado no cmd como administrador
 try {
-    Start-Process -FilePath "cmd" -ArgumentList "/c "$outputPath"" -Verb RunAs
+    Start-Process -FilePath "cmd" -ArgumentList "/c ""$outputPath""" -Verb RunAs
     Write-Host "Script executado com sucesso como administrador."
 } catch {
     Write-Error "Erro ao executar o script: $($_.Exception.Message)"
